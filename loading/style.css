@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  background-color: #36454f;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg path {
+  fill: transparent;
+  stroke: white;
+  stroke-width: 0.1;
+  stroke-dasharray: 65;
+  stroke-dashoffset: 65;
+  animation: textAnimation 4s ease-in-out 1 forwards;
+}
+
+@keyframes textAnimation {
+  0% {
+    stroke-dashoffset: 50;
+  }
+  80% {
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: white;
+  }
+}
