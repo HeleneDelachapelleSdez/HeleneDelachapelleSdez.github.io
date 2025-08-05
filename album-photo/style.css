@@ -54,7 +54,7 @@ p {
 }
 
 main {
-  width: 65%;
+  max-width: 60%;
   margin: auto;
 }
 
@@ -65,12 +65,19 @@ main {
   gap: 2.5rem;
 }
 
+ul {
+  list-style: none; /* Supprime les puces */
+}
+
 .theme span {
   font-weight: 600;
 }
 
 .theme {
   font-size: 1.1rem;
+  li {
+    display: inline-block;
+  }
 }
 
 .preview {
