@@ -3,10 +3,37 @@ body {
   /* background-color: #36454f; */
 }
 
-#color-div {
+.page {
   height: 100vh;
   width: 100vw;
+  background-color: #fff;
+  margin: 0;
+}
+
+.navbar {
+  top: 0;
+  position: absolute;
+  max-height: 80px;
+  padding: 20px 0;
   display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+
+  p {
+    padding: 0 30px;
+  }
+}
+
+/* -------- colorful modal loader ------- */
+
+#color-div {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10000;
+  position: absolute;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 }
@@ -31,4 +58,17 @@ svg path {
     stroke-dashoffset: 0;
     fill: rgba(255, 255, 255, 0.8);
   }
+}
+
+@keyframes slideUpAndOut {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh); /* Move fully off screen */
+  }
+}
+
+.slide-up-out {
+  animation: slideUpAndOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
