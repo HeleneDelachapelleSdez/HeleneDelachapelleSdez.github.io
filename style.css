@@ -1,6 +1,9 @@
 body {
   margin: 0;
-  /* background-color: #36454f; */
+  padding: 0;
+  font-family: "ernst", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .page {
@@ -23,6 +26,12 @@ body {
   p {
     padding: 0 30px;
   }
+}
+
+main {
+  display: flex;
+  padding: 0 30px;
+  margin-top: 80px;
 }
 
 /* -------- colorful modal loader ------- */
